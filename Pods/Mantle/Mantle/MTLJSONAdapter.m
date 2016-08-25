@@ -256,7 +256,9 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 	}
 }
 
+// 这里把字典专为model
 - (id)modelFromJSONDictionary:(NSDictionary *)JSONDictionary error:(NSError **)error {
+    // 先不看这里，这里是处理类簇的
 	if ([self.modelClass respondsToSelector:@selector(classForParsingJSONDictionary:)]) {
 		Class class = [self.modelClass classForParsingJSONDictionary:JSONDictionary];
 		if (class == nil) {
@@ -282,7 +284,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 	}
 
 	NSMutableDictionary *dictionaryValue = [[NSMutableDictionary alloc] initWithCapacity:JSONDictionary.count];
-
+    // 这里把服务端给过来的字典，key都替换为model里面的property。存到dictionaryValue。
 	for (NSString *propertyKey in [self.modelClass propertyKeys]) {
 		id JSONKeyPaths = self.JSONKeyPathsByPropertyKey[propertyKey];
 

@@ -129,6 +129,7 @@ static BOOL MTLValidateAndSetValue(id obj, NSString *key, id value, BOOL forceUp
 	return [super init];
 }
 
+// 字典转换为model
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary error:(NSError **)error {
 	self = [self init];
 	if (self == nil) return nil;
