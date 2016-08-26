@@ -162,6 +162,7 @@ static BOOL MTLValidateAndSetValue(id obj, NSString *key, id value, BOOL forceUp
 		cls = cls.superclass;
 		if (properties == NULL) continue;
 
+        // 退出时，释放properties
 		@onExit {
 			free(properties);
 		};
