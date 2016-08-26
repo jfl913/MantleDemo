@@ -10,6 +10,7 @@
 
 @implementation GHIssue
 
+// model的property与JSON的key之间的映射关系
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{

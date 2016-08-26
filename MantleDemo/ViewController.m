@@ -32,10 +32,9 @@
 - (IBAction)tapButton:(id)sender
 {
     NSError *error = nil;
-    GHIssue *issue = [MTLJSONAdapter
-                      modelOfClass:[GHIssue class]
-                      fromJSONDictionary:self.dictionary
-                      error:&error];
+    GHIssue *issue = [MTLJSONAdapter modelOfClass:[GHIssue class]
+                               fromJSONDictionary:self.dictionary
+                                            error:&error];
     NSLog(@"issue: %@", issue);
 }
 
