@@ -145,11 +145,13 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 	NSSet *propertyKeys = [self.modelClass propertyKeys];
 
 	for (NSString *mappedPropertyKey in _JSONKeyPathsByPropertyKey) {
+        // 验证_JSONKeyPathsByPropertyKey中要求的model的property在_modelClass中
 		if (![propertyKeys containsObject:mappedPropertyKey]) {
 			NSAssert(NO, @"%@ is not a property of %@.", mappedPropertyKey, modelClass);
 			return nil;
 		}
-
+        
+        // 验证JSON的key是否合法
 		id value = _JSONKeyPathsByPropertyKey[mappedPropertyKey];
 
 		if ([value isKindOfClass:NSArray.class]) {
@@ -256,7 +258,9 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 	}
 }
 
+// 这里把字典专为model
 - (id)modelFromJSONDictionary:(NSDictionary *)JSONDictionary error:(NSError **)error {
+    // 先不看这里，这里是处理类簇的
 	if ([self.modelClass respondsToSelector:@selector(classForParsingJSONDictionary:)]) {
 		Class class = [self.modelClass classForParsingJSONDictionary:JSONDictionary];
 		if (class == nil) {
@@ -282,7 +286,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 	}
 
 	NSMutableDictionary *dictionaryValue = [[NSMutableDictionary alloc] initWithCapacity:JSONDictionary.count];
-
+    // 这里把服务端给过来的字典，key都替换为model里面的property，value转换为我们需要的类型。存到dictionaryValue。
 	for (NSString *propertyKey in [self.modelClass propertyKeys]) {
 		id JSONKeyPaths = self.JSONKeyPathsByPropertyKey[propertyKey];
 
@@ -305,13 +309,15 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 			value = dictionary;
 		} else {
 			BOOL success = NO;
+            // 获取字典中value的值
 			value = [JSONDictionary mtl_valueForJSONKeyPath:JSONKeyPaths success:&success error:error];
 
 			if (!success) return nil;
 		}
 
 		if (value == nil) continue;
-
+        
+        // 获取transformer之后，调用transformedValue:将JSON中的value转换为我们需要的类型
 		@try {
 			NSValueTransformer *transformer = self.valueTransformersByPropertyKey[propertyKey];
 			if (transformer != nil) {
