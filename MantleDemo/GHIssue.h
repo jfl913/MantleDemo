@@ -14,5 +14,6 @@
 @property (nonatomic, copy) NSURL *URL;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, strong) GHUser *user;
+@property (nonatomic, copy) NSString *name;
 
 @end
