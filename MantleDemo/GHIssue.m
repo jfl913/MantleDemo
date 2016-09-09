@@ -20,6 +20,10 @@
              };
 }
 
++ (NSValueTransformer *)URLJSONTransformer {
+    return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
+}
+
 + (NSValueTransformer *)userJSONTransformer
 {
     return [MTLJSONAdapter dictionaryTransformerWithModelClass:[GHUser class]];

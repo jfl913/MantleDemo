@@ -66,6 +66,7 @@ mtl_propertyAttributes *mtl_copyPropertyAttributes (objc_property_t property) {
             trimmedName[classNameLength] = '\0';
 
             // attempt to look up the class in the runtime
+            // 得到属性的类名
             attributes->objectClass = objc_getClass(trimmedName);
         }
     }
@@ -75,6 +76,7 @@ mtl_propertyAttributes *mtl_copyPropertyAttributes (objc_property_t property) {
         next = strchr(next, ',');
     }
 
+    // 得到变量的属性，例如assign，copy，retain等
     while (next && *next == ',') {
         char flag = next[1];
         next += 2;
