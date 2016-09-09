@@ -38,6 +38,4 @@
     NSLog(@"issue: %@", issue);
 }
 
-
-
 @end
