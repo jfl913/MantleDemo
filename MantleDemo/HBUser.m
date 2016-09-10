@@ -1,14 +1,14 @@
 //
-//  GHUser.m
+//  HBUser.m
 //  MantleDemo
 //
-//  Created by JunfengLi on 16/8/21.
+//  Created by LiJunfeng on 16/9/9.
 //  Copyright © 2016年 JunfengLi. All rights reserved.
 //
 
-#import "GHUser.h"
+#import "HBUser.h"
 
-@implementation GHUser
+@implementation HBUser
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
@@ -18,6 +18,12 @@
              @"age": @"age",
              @"success": @"success",
              };
+}
+
+
++ (NSValueTransformer *)successJSONTransformer
+{
+    return [NSValueTransformer valueTransformerForName:MTLBooleanValueTransformerName];
 }
 
 @end

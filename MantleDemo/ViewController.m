@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "GHIssue.h"
+#import "HBUser.h"
 
 @interface ViewController ()
 
@@ -36,6 +37,21 @@
                                fromJSONDictionary:self.dictionary
                                             error:&error];
     NSLog(@"issue: %@", issue);
+    
+    
+    GHUser *user = [GHUser new];
+    user.name = @"jfl";
+    user.gender = @"male";
+    user.age = 18;
+    user.success = 0;
+    
+    NSDictionary *userDict = [MTLJSONAdapter JSONDictionaryFromModel:user error:nil];
+    HBUser *otherUser = [MTLJSONAdapter modelOfClass:[HBUser class]
+                                  fromJSONDictionary:userDict
+                                               error:&error];
+    NSLog(@"otherUser: %@", otherUser);
 }
+
+
 
 @end

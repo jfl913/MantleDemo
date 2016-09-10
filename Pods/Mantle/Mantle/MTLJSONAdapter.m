@@ -40,6 +40,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 @property (nonatomic, copy, readonly) NSDictionary *JSONKeyPathsByPropertyKey;
 
 // A cached copy of the return value of -valueTransformersForModelClass:
+// model的property对应的NSValueTransformer
 @property (nonatomic, copy, readonly) NSDictionary *valueTransformersByPropertyKey;
 
 // Used to cache the JSON adapters returned by -JSONAdapterForModelClass:error:.
