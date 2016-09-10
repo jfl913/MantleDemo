@@ -158,11 +158,13 @@ static BOOL MTLValidateAndSetValue(id obj, NSString *key, id value, BOOL forceUp
 	while (!stop && ![cls isEqual:MTLModel.class]) {
 		unsigned count = 0;
 		objc_property_t *properties = class_copyPropertyList(cls, &count);
+        
 
 		cls = cls.superclass;
 		if (properties == NULL) continue;
 
         // 退出时，释放properties
+        // for automatically cleaning up manually-allocated memory, file handles, locks, etc., at the end of a scope.
 		@onExit {
 			free(properties);
 		};
