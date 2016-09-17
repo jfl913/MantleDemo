@@ -17,18 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDA-4C-3cG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87y-Gg-zLw">
                                 <rect key="frame" x="277" y="285" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7bq-7Q-3zF"/>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Yx-wz-U8J"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JDA-4C-3cG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C8a-bz-TnN"/>
-                            <constraint firstItem="JDA-4C-3cG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xCJ-0w-k6C"/>
+                            <constraint firstItem="87y-Gg-zLw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9js-OX-Bnv"/>
+                            <constraint firstItem="87y-Gg-zLw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Rgn-y3-iHG"/>
                         </constraints>
                     </view>
                 </viewController>

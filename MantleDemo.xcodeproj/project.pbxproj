@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		853E408C1D82C13100532F17 /* HBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 853E408B1D82C13100532F17 /* HBUser.m */; };
 		B6D47AA61D69CCFC00569472 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D47AA51D69CCFC00569472 /* main.m */; };
 		B6D47AA91D69CCFC00569472 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D47AA81D69CCFC00569472 /* AppDelegate.m */; };
 		B6D47AAC1D69CCFC00569472 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D47AAB1D69CCFC00569472 /* ViewController.m */; };
@@ -21,6 +22,8 @@
 /* Begin PBXFileReference section */
 		3DBB43B5E2BE9DDC8EDDA8F4 /* Pods-MantleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MantleDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MantleDemo/Pods-MantleDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		80EB98C9EA79845CD6864335 /* libPods-MantleDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MantleDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		853E408A1D82C13100532F17 /* HBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBUser.h; sourceTree = "<group>"; };
+		853E408B1D82C13100532F17 /* HBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBUser.m; sourceTree = "<group>"; };
 		894C54ACE07E711A9BF062D4 /* Pods-MantleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MantleDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MantleDemo/Pods-MantleDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B6D47AA11D69CCFC00569472 /* MantleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MantleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D47AA51D69CCFC00569472 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 				B6D47ABC1D69D26700569472 /* GHIssue.m */,
 				B6D47ABE1D69D2DB00569472 /* GHUser.h */,
 				B6D47ABF1D69D2DB00569472 /* GHUser.m */,
+				853E408A1D82C13100532F17 /* HBUser.h */,
+				853E408B1D82C13100532F17 /* HBUser.m */,
 				B6D47AAD1D69CCFC00569472 /* Main.storyboard */,
 				B6D47AB01D69CCFC00569472 /* Assets.xcassets */,
 				B6D47AB21D69CCFC00569472 /* LaunchScreen.storyboard */,
@@ -238,6 +243,7 @@
 				B6D47AAC1D69CCFC00569472 /* ViewController.m in Sources */,
 				B6D47AA91D69CCFC00569472 /* AppDelegate.m in Sources */,
 				B6D47AA61D69CCFC00569472 /* main.m in Sources */,
+				853E408C1D82C13100532F17 /* HBUser.m in Sources */,
 				B6D47AC01D69D2DB00569472 /* GHUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

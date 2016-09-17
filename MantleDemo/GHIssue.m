@@ -22,9 +22,9 @@
              };
 }
 
-+ (NSValueTransformer *)URLJSONTransformer
-{
-    return [nsvaluva];
+
++ (NSValueTransformer *)URLJSONTransformer {
+    return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
 }
 
 + (NSValueTransformer *)userJSONTransformer
