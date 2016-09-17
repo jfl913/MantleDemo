@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B62AE8D11D7C446400CED2DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B62AE8D01D7C446400CED2DF /* main.m */; };
+		B62AE8D41D7C446400CED2DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B62AE8D31D7C446400CED2DF /* AppDelegate.m */; };
+		B62AE8D71D7C446400CED2DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B62AE8D61D7C446400CED2DF /* ViewController.m */; };
+		B62AE8DA1D7C446400CED2DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62AE8D81D7C446400CED2DF /* Main.storyboard */; };
+		B62AE8DC1D7C446400CED2DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62AE8DB1D7C446400CED2DF /* Assets.xcassets */; };
+		B62AE8DF1D7C446400CED2DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62AE8DD1D7C446400CED2DF /* LaunchScreen.storyboard */; };
+		B62AE8E81D7C44ED00CED2DF /* ClassNameTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = B62AE8E71D7C44ED00CED2DF /* ClassNameTransformer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B62AE8CC1D7C446400CED2DF /* NSValueTransformerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSValueTransformerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62AE8D01D7C446400CED2DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B62AE8D21D7C446400CED2DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B62AE8D31D7C446400CED2DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B62AE8D51D7C446400CED2DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B62AE8D61D7C446400CED2DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B62AE8D91D7C446400CED2DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B62AE8DB1D7C446400CED2DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B62AE8DE1D7C446400CED2DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B62AE8E01D7C446400CED2DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B62AE8E61D7C44ED00CED2DF /* ClassNameTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassNameTransformer.h; sourceTree = "<group>"; };
+		B62AE8E71D7C44ED00CED2DF /* ClassNameTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassNameTransformer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B62AE8C91D7C446400CED2DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B62AE8C31D7C446400CED2DF = {
+			isa = PBXGroup;
+			children = (
+				B62AE8CE1D7C446400CED2DF /* NSValueTransformerDemo */,
+				B62AE8CD1D7C446400CED2DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B62AE8CD1D7C446400CED2DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B62AE8CC1D7C446400CED2DF /* NSValueTransformerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B62AE8CE1D7C446400CED2DF /* NSValueTransformerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B62AE8D21D7C446400CED2DF /* AppDelegate.h */,
+				B62AE8D31D7C446400CED2DF /* AppDelegate.m */,
+				B62AE8D51D7C446400CED2DF /* ViewController.h */,
+				B62AE8D61D7C446400CED2DF /* ViewController.m */,
+				B62AE8D81D7C446400CED2DF /* Main.storyboard */,
+				B62AE8E61D7C44ED00CED2DF /* ClassNameTransformer.h */,
+				B62AE8E71D7C44ED00CED2DF /* ClassNameTransformer.m */,
+				B62AE8DB1D7C446400CED2DF /* Assets.xcassets */,
+				B62AE8DD1D7C446400CED2DF /* LaunchScreen.storyboard */,
+				B62AE8E01D7C446400CED2DF /* Info.plist */,
+				B62AE8CF1D7C446400CED2DF /* Supporting Files */,
+			);
+			path = NSValueTransformerDemo;
+			sourceTree = "<group>";
+		};
+		B62AE8CF1D7C446400CED2DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B62AE8D01D7C446400CED2DF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B62AE8CB1D7C446400CED2DF /* NSValueTransformerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B62AE8E31D7C446400CED2DF /* Build configuration list for PBXNativeTarget "NSValueTransformerDemo" */;
+			buildPhases = (
+				B62AE8C81D7C446400CED2DF /* Sources */,
+				B62AE8C91D7C446400CED2DF /* Frameworks */,
+				B62AE8CA1D7C446400CED2DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSValueTransformerDemo;
+			productName = NSValueTransformerDemo;
+			productReference = B62AE8CC1D7C446400CED2DF /* NSValueTransformerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B62AE8C41D7C446400CED2DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = JunfengLi;
+				TargetAttributes = {
+					B62AE8CB1D7C446400CED2DF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = B62AE8C71D7C446400CED2DF /* Build configuration list for PBXProject "NSValueTransformerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B62AE8C31D7C446400CED2DF;
+			productRefGroup = B62AE8CD1D7C446400CED2DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B62AE8CB1D7C446400CED2DF /* NSValueTransformerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B62AE8CA1D7C446400CED2DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62AE8DF1D7C446400CED2DF /* LaunchScreen.storyboard in Resources */,
+				B62AE8DC1D7C446400CED2DF /* Assets.xcassets in Resources */,
+				B62AE8DA1D7C446400CED2DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B62AE8C81D7C446400CED2DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62AE8D71D7C446400CED2DF /* ViewController.m in Sources */,
+				B62AE8D41D7C446400CED2DF /* AppDelegate.m in Sources */,
+				B62AE8D11D7C446400CED2DF /* main.m in Sources */,
+				B62AE8E81D7C44ED00CED2DF /* ClassNameTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B62AE8D81D7C446400CED2DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B62AE8D91D7C446400CED2DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B62AE8DD1D7C446400CED2DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B62AE8DE1D7C446400CED2DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B62AE8E11D7C446400CED2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B62AE8E21D7C446400CED2DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B62AE8E41D7C446400CED2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NSValueTransformerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jfl.NSValueTransformerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B62AE8E51D7C446400CED2DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NSValueTransformerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jfl.NSValueTransformerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B62AE8C71D7C446400CED2DF /* Build configuration list for PBXProject "NSValueTransformerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62AE8E11D7C446400CED2DF /* Debug */,
+				B62AE8E21D7C446400CED2DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B62AE8E31D7C446400CED2DF /* Build configuration list for PBXNativeTarget "NSValueTransformerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62AE8E41D7C446400CED2DF /* Debug */,
+				B62AE8E51D7C446400CED2DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B62AE8C41D7C446400CED2DF /* Project object */;
+}

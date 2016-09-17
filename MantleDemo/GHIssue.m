@@ -22,6 +22,11 @@
              };
 }
 
++ (NSValueTransformer *)URLJSONTransformer
+{
+    return [nsvaluva];
+}
+
 + (NSValueTransformer *)userJSONTransformer
 {
     return [MTLJSONAdapter dictionaryTransformerWithModelClass:[GHUser class]];
