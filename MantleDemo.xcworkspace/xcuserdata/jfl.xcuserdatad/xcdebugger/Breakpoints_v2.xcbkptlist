@@ -9,14 +9,30 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/Mantle/Mantle/MTLModel.m"
-            timestampString = "495193390.451791"
+            filePath = "Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m"
+            timestampString = "496152209.373297"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
-            landmarkName = "+enumeratePropertiesUsingBlock:"
-            landmarkType = "5">
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "mtl_copyPropertyAttributes()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m"
+            timestampString = "496152696.228796"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "mtl_copyPropertyAttributes()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

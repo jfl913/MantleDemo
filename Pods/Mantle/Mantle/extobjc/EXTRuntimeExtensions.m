@@ -10,6 +10,8 @@
 #import "EXTRuntimeExtensions.h"
 
 #import <Foundation/Foundation.h>
+// The string starts with a T followed by the @encode type and a comma, and finishes with a V followed by the name of the backing instance variable. Between these, the attributes are specified by the following descriptors, separated by commas
+// https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtPropertyIntrospection.html
 
 mtl_propertyAttributes *mtl_copyPropertyAttributes (objc_property_t property) {
     const char * const attrString = property_getAttributes(property);
