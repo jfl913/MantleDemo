@@ -170,6 +170,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 
 	_valueTransformersByPropertyKey = [self.class valueTransformersForModelClass:modelClass];
 
+    // 暂时不看
 	_JSONAdaptersByModelClass = [NSMapTable strongToStrongObjectsMapTable];
 
 	return self;

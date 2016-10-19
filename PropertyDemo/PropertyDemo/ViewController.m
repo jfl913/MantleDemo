@@ -42,7 +42,7 @@
 {
     unsigned count = 0;
     objc_property_t *properties = class_copyPropertyList([GHIssue class], &count);
-    for (unsigned i = 0; i < 1; i++) {
+    for (unsigned i = 0; i < count; i++) {
         objc_property_t property = properties[i];
         
         const char * propertyName = property_getName(property);
@@ -53,12 +53,17 @@
         NSLog(@"propertyAttributes: %s", propertyAttributes);
         NSLog(@"---------------------");
         
-        const char *typeString = propertyAttributes + 1;
-        const char *next = NSGetSizeAndAlignment(typeString, NULL, NULL);
-        NSLog(@"next: %s", next);
+//        NSUInteger size;
+//        const char *typeString = propertyAttributes + 1;
+//        const char *next = NSGetSizeAndAlignment(typeString, &size, NULL);
+//        NSLog(@"next: %s", next);
+//        size_t typeLength = next - typeString;
+//        NSLog(@"typeLength: %zu", typeLength);
+//        NSLog(@"size: %lu", (unsigned long)size);
+
     }
     
-    NSLog(@"encode: %s", @encode(NSURL));
+    NSLog(@"encode: %s", @encode(id));
 }
 
 @end

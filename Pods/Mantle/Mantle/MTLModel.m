@@ -155,6 +155,8 @@ static BOOL MTLValidateAndSetValue(id obj, NSString *key, id value, BOOL forceUp
 	Class cls = self;
 	BOOL stop = NO;
 
+    // https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/ObjectComparison.html
+    // 并没有找到isEqual: 这个类方法，或许这是个私有api，我想它相当于调用isMemberOfClass:
 	while (!stop && ![cls isEqual:MTLModel.class]) {
 		unsigned count = 0;
 		objc_property_t *properties = class_copyPropertyList(cls, &count);
