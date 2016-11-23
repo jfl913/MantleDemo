@@ -23,14 +23,14 @@
 {
     [super viewDidLoad];
     
-    [Xtrace describeValues:NO];
-    [Xtrace showCaller:YES];
-    [Xtrace showActual:YES];
-    [Xtrace showArguments:YES];
-    [Xtrace showReturns:NO];
-    [GHIssue xtrace];
-    [MTLJSONAdapter xtrace];
-    [MTLModel xtrace];
+//    [Xtrace describeValues:NO];
+//    [Xtrace showCaller:YES];
+//    [Xtrace showActual:YES];
+//    [Xtrace showArguments:YES];
+//    [Xtrace showReturns:NO];
+//    [GHIssue xtrace];
+//    [MTLJSONAdapter xtrace];
+//    [MTLModel xtrace];
     
     NSDictionary *userDict = @{@"name": @"李俊峰",
                                @"gender": @"男",};
@@ -49,6 +49,10 @@
     NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSString *path  = [docPath stringByAppendingPathComponent:@"data.archiver"];
     [NSKeyedArchiver archiveRootObject:issue toFile:path];
+    
+    GHIssue *unArchive = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    
+    NSLog(@"unArchive: %@", unArchive);
     
     NSLog(@"issue: %@", issue);
     
