@@ -73,6 +73,7 @@
 ///
 /// Returns the class that should be parsed (which may be the receiver), or nil
 /// to abort parsing (e.g., if the data is invalid).
+// 主要用于类簇
 + (Class)classForParsingJSONDictionary:(NSDictionary *)JSONDictionary;
 
 @end

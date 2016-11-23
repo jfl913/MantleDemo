@@ -178,6 +178,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 
 #pragma mark Serialization
 
+// 把model转化为字典
 - (NSDictionary *)JSONDictionaryFromModel:(id<MTLJSONSerializing>)model error:(NSError **)error {
 	NSParameterAssert(model != nil);
 	NSParameterAssert([model isKindOfClass:self.modelClass]);
@@ -209,7 +210,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 
 			if ([transformer respondsToSelector:@selector(reverseTransformedValue:success:error:)]) {
 				id<MTLTransformerErrorHandling> errorHandlingTransformer = (id)transformer;
-
+    
 				value = [errorHandlingTransformer reverseTransformedValue:value success:&success error:&tmpError];
 
 				if (!success) {
@@ -260,7 +261,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 	}
 }
 
-// 这里把字典专为model
+// 这里把字典转为model
 - (id)modelFromJSONDictionary:(NSDictionary *)JSONDictionary error:(NSError **)error {
     // 先不看这里，这里是处理类簇的
 	if ([self.modelClass respondsToSelector:@selector(classForParsingJSONDictionary:)]) {
