@@ -178,7 +178,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 
 #pragma mark Serialization
 
-// 把model转化为字典
+// 把model转化为字典 核心是用dictionaryWithValuesForKeys这个方法
 - (NSDictionary *)JSONDictionaryFromModel:(id<MTLJSONSerializing>)model error:(NSError **)error {
 	NSParameterAssert(model != nil);
 	NSParameterAssert([model isKindOfClass:self.modelClass]);
